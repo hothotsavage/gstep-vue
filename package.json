@@ -1,0 +1,44 @@
+{
+  "name": "gstep-vue",
+  "private": false,
+  "version": "1.1.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist",
+    "dist/**"
+  ],
+  "main": "./dist/gstep-vue.umd.js",
+  "module": "./dist/gstep-vue.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gstep-vue.es.js",
+      "require": "./dist/gstep-vue.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "dependencies": {
+    "@antv/g6": "^4.8.20",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@vueuse/core": "^12.8.2",
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.8",
+    "qs": "^6.11.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-element-plus": "^0.8.0",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.6"
+  }
+}
